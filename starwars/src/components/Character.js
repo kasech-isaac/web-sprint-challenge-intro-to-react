@@ -2,6 +2,7 @@
 import React,  { useState, useEffect }  from 'react';
 import axios from "axios";
 import CharacterList from "./CharacterList"
+import { CardHeader, Button,CardFooter} from "reactstrap";
 
 
 function Character() {
@@ -32,7 +33,7 @@ function Character() {
             massNum={chara.mass}
             hairColor={chara.hair_color}
             SkinColor={chara.skin_color}
-            films={<a href="chara.films">Click Me</a>}
+            films={<a href="chara.films"><Button color="red">Click Me</Button></a>}
             
  />
  
